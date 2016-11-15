@@ -45,6 +45,11 @@ public class MainActivity extends AppCompatActivity implements ActivityCallback{
         transaction.commit();
     }
 
+    @Override
+    protected void onDestroy() {
+        ButterKnife.unbind(this);
+        super.onDestroy();
+    }
 
     @Override
     public void startGiphyAnimFragment(String path) {
