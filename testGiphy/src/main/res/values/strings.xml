@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">test Giphy</string>
+    <string name="fragment_giphy_list_search">Search</string>
+</resources>
