@@ -66,7 +66,11 @@ public class GiphyAnimationFragment extends BaseFragment  implements IGiphyItemV
 
         return view;
     }
-
+    @Override
+    public void onDestroyView() {
+        ButterKnife.unbind(this);
+        super.onDestroyView();
+    }
     @Override
     protected Presenter getPresenter() {
         return presenter;

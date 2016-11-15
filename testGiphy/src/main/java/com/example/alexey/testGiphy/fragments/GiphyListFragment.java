@@ -79,6 +79,11 @@ public class GiphyListFragment extends BaseFragment implements IListView {
     }
 
     @Override
+    public void onDestroyView() {
+        ButterKnife.unbind(this);
+        super.onDestroyView();
+    }
+    @Override
     protected Presenter getPresenter() {
         return presenter;
     }
